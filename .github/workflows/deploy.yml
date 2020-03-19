@@ -67,8 +67,8 @@ jobs:
       - run: sh ./scratch2maqueen/install_for_github_actions.sh
       - run: sh ./tm2scratch/install_for_github_actions.sh
       - run: sh ./tm2scratch/install_microbit_more_for_github_actions.sh
-      - run: sh ./posenet2scratch/install_for_github_actions.sh
-      - run: sh ./ml2scratch/install_for_github_actions.sh
+      - run: sh ./posenet2scratch/install.sh
+      - run: sh ./ml2scratch/install.sh
       - run: npm run build
       - run: cp ./scratch3/index.html ./build/index.html
       - uses: peaceiris/actions-gh-pages@v3
