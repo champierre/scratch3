@@ -1338,7 +1338,12 @@ var ArgumentType = {
   /**
    * MIDI note number with note picker (piano) field
    */
-  NOTE: 'note'
+  NOTE: 'note',
+
+  /**
+   * Inline image on block (as part of the label)
+   */
+  IMAGE: 'image'
 };
 module.exports = ArgumentType;
 

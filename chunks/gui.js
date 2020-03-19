@@ -135,10 +135,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/app-state-hoc.jsx */ "./src/lib/app-state-hoc.jsx");
 /* harmony import */ var _containers_gui_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../containers/gui.jsx */ "./src/containers/gui.jsx");
 /* harmony import */ var _lib_hash_parser_hoc_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/hash-parser-hoc.jsx */ "./src/lib/hash-parser-hoc.jsx");
-/* harmony import */ var _lib_titled_hoc_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/titled-hoc.jsx */ "./src/lib/titled-hoc.jsx");
-/* harmony import */ var _lib_log_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/log.js */ "./src/lib/log.js");
+/* harmony import */ var _lib_log_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/log.js */ "./src/lib/log.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 
 
 
@@ -153,15 +151,15 @@ var onClickLogo = function onClickLogo() {
 };
 
 var handleTelemetryModalCancel = function handleTelemetryModalCancel() {
-  Object(_lib_log_js__WEBPACK_IMPORTED_MODULE_7__["default"])('User canceled telemetry modal');
+  Object(_lib_log_js__WEBPACK_IMPORTED_MODULE_6__["default"])('User canceled telemetry modal');
 };
 
 var handleTelemetryModalOptIn = function handleTelemetryModalOptIn() {
-  Object(_lib_log_js__WEBPACK_IMPORTED_MODULE_7__["default"])('User opted into telemetry');
+  Object(_lib_log_js__WEBPACK_IMPORTED_MODULE_6__["default"])('User opted into telemetry');
 };
 
 var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
-  Object(_lib_log_js__WEBPACK_IMPORTED_MODULE_7__["default"])('User opted out of telemetry');
+  Object(_lib_log_js__WEBPACK_IMPORTED_MODULE_6__["default"])('User opted out of telemetry');
 };
 /*
  * Render the GUI playground. This is a separate function because importing anything
@@ -175,7 +173,7 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
   // the hierarchy of HOC constructor calls clearer here; it has nothing to do with redux's
   // ability to compose reducers.
 
-  var WrappedGui = Object(redux__WEBPACK_IMPORTED_MODULE_2__["compose"])(_lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _lib_hash_parser_hoc_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], _lib_titled_hoc_jsx__WEBPACK_IMPORTED_MODULE_6__["default"])(_containers_gui_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]); // TODO a hack for testing the backpack, allow backpack host to be set by url param
+  var WrappedGui = Object(redux__WEBPACK_IMPORTED_MODULE_2__["compose"])(_lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _lib_hash_parser_hoc_jsx__WEBPACK_IMPORTED_MODULE_5__["default"])(_containers_gui_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]); // TODO a hack for testing the backpack, allow backpack host to be set by url param
 
   var backpackHostMatches = window.location.href.match(/[?&]backpack_host=([^&]*)&?/);
   var backpackHost = backpackHostMatches ? backpackHostMatches[1] : null;
@@ -197,6 +195,7 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
 
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( // important: this is checking whether `simulateScratchDesktop` is truthy, not just defined!
   simulateScratchDesktop ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedGui, {
+    canEditTitle: true,
     isScratchDesktop: true,
     showTelemetryModal: true,
     canSave: false,
@@ -204,6 +203,7 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
     onTelemetryModalOptIn: handleTelemetryModalOptIn,
     onTelemetryModalOptOut: handleTelemetryModalOptOut
   }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedGui, {
+    canEditTitle: true,
     backpackVisible: true,
     showComingSoon: true,
     backpackHost: backpackHost,
