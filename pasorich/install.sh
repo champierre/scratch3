@@ -5,7 +5,7 @@ LF=${LF%_}
 EXTENSION_NAME=PaSoRich
 EXTENSION_ID=pasorich
 COLLABORATOR=con3office
-EXTENSION_DESCRIPTION="Read SmartCard Id"
+EXTENSION_DESCRIPTION="Read SmartCard Idm"
 
 mkdir -p node_modules/scratch-vm/src/extensions/scratch3_${EXTENSION_ID}
 cp ${EXTENSION_ID}/scratch-vm/src/extensions/scratch3_${EXTENSION_ID}/index.js node_modules/scratch-vm/src/extensions/scratch3_${EXTENSION_ID}/
