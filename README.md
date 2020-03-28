@@ -21,6 +21,10 @@ TBD
 
 ## Release Notes
 
+### ML2Scratch
+
+- 3.0.0 2020/03/28 Scratchのステージ画像を学習/判定できるようにした。
+
 ### PaSoRich
 
-- 0.4.3 Mar 20, 2020 Improve Connect function
+- 0.4.3 2020/03/20 Improve Connect function
