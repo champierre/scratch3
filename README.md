@@ -17,7 +17,7 @@
 
 ## How to add a custom extension.
 
-TBD
+- TBD
 
 ## Release Notes
 
