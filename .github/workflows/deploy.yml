@@ -58,6 +58,10 @@ jobs:
           path: ./pasorich
       - uses: actions/checkout@v2
         with:
+          repository: sugiura-lab/scratch3-qrcode
+          path: ./scratch3-qrcode
+      - uses: actions/checkout@v2
+        with:
           repository: champierre/speech2scratch
           path: ./speech2scratch
       - uses: actions/checkout@v2
@@ -66,6 +70,7 @@ jobs:
           path: ./ic2scratch
       - run: sh ./ic2scratch/install.sh
       - run: sh ./speech2scratch/install.sh
+      - run: sh ./scratch3-qrcode/install.sh
       - run: sh ./scratch3/pasorich/install.sh
       - run: sh ./handpose2scratch/install.sh
       - run: sh ./facemesh2scratch/install.sh

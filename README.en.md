@@ -12,6 +12,7 @@
 - [Facemesh2Scratch](https://github.com/champierre/facemesh2scratch) You can track your face with just a webcam.
 - [Handpose2Scratch](https://github.com/champierre/handpose2scratch) You can track your hands and fingers with just a webcam.
 - [PaSoRich](https://github.com/con3office/pasorich) The IC card reader "PaSoRi" (Pasoli) can be used to read IC cards such as Suica.
+- [scratch3-qrcode](https://github.com/sugiura-lab/scratch3-qrcode) Read the QR code.
 - [Speech2Scratch](https://github.com/champierre/speech2scratch) converts speech to text using the browser's speech recognition feature.
 - [ImageClassifier2Scratch](https://github.com/champierre/ic2scratch) Recognizes an object captured by a webcam and determines what it is.
 
