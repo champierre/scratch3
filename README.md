@@ -34,4 +34,4 @@
 
 ### scratch3-qrcode
 
-- v1.0 2020/05/11 Initial version
+- v1.0 2020/05/12 Initial version
