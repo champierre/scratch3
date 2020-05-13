@@ -34,4 +34,5 @@
 
 ### scratch3-qrcode
 
+- v1.1 2020/05/13 Add error handling to TextDecoder.
 - v1.0 2020/05/12 Initial version.
