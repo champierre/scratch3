@@ -33,6 +33,7 @@
 - 0.4.3 2020/03/20 Improve Connect function
 
 ### scratch3-qrcode
+- v1.3 2020/05/15 Fix font-size of credit.
 - v1.2 2020/05/14 Add UTF-16 decoder.
 - v1.1 2020/05/13 Add error handling to TextDecoder.
 - v1.0 2020/05/12 Initial version.
