@@ -38,3 +38,7 @@
 - v1.2 2020/05/14 Add UTF-16 decoder.
 - v1.1 2020/05/13 Add error handling to TextDecoder.
 - v1.0 2020/05/12 Initial version.
+
+### TM2Scratch
+
+- 2020/6/1 文言変更、閾値 -> しきい値
