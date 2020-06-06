@@ -46,3 +46,11 @@
 ### Handpose2Scratch
 
 - 2020/6/6 "Handpose tfjs Error - No backend found in registry" を修正
+
+### Facemesh2Scratch
+
+- 2020/6/6 "No backend found in registry" を修正
+
+### microbit-more
+
+- 2020/6/6 Update repo of microbit-more.
