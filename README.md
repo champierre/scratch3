@@ -42,3 +42,7 @@
 ### TM2Scratch
 
 - 2020/6/1 文言変更、閾値 -> しきい値
+
+### Handpose2Scratch
+
+- 2020/6/6 "Handpose tfjs Error - No backend found in registry" を修正
