@@ -46,6 +46,7 @@
 ### Handpose2Scratch
 
 - 2020/6/6 "Handpose tfjs Error - No backend found in registry" を修正
+- 2020/6/7 Add description of each landmark.
 
 ### Facemesh2Scratch
 
