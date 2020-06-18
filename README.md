@@ -55,3 +55,7 @@
 ### microbit-more
 
 - 2020/6/6 Update repo of microbit-more.
+
+### Posenet2Scratch
+
+- 2020/06/18 「ビデオを「切」にする」ブロックで、変数をプルダウンメニューの中に入れられないように変更。
